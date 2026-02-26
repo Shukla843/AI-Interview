@@ -12,10 +12,12 @@ import Pricing from './pages/Pricing'
 import InterviewReport from './pages/InterviewReport'
 
 
-
+console.log("Server URL:", import.meta.env.VITE_API_URL);
 export const ServerUrl = import.meta.env.VITE_API_URL;
+console.log("Server URL after export:", ServerUrl);
+//"http://localhost:8000"
 function App() {
-
+ 
   const dispatch = useDispatch()
   useEffect(()=>{
     const getUser = async () => {

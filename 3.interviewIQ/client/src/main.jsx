@@ -5,6 +5,9 @@ import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import store from './redux/store.js'
+
+
+console.log("Server URL in main"); 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
@@ -14,3 +17,4 @@ createRoot(document.getElementById('root')).render(
     </BrowserRouter>
   </StrictMode>,
 )
+console.log("Server URL in main"); 
