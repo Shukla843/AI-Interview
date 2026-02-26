@@ -5,6 +5,7 @@ import User from "../models/user.model.js";
 import Interview from "../models/interview.model.js";
 
 export const analyzeResume = async (req, res) => {
+   console.log("req.file:", req.file);
   try {
     if (!req.file) {
       return res.status(400).json({ message: "Resume required" });

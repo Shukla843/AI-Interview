@@ -38,6 +38,7 @@ app.use("/api/interview", interviewRouter);
 app.use("/api/payment", paymentRouter);
 
 // Port (Render automatically provides process.env.PORT)
+console.log("PORT:", process.env.PORT);
 const PORT = process.env.PORT || 6000;
 
 app.listen(PORT, async () => {
